@@ -1,6 +1,12 @@
+:root {
+    font-family: "Alice", serif;
+    line-height: 150%;
+}
+
 body {
-    background-color: url(images/Image.jpg);
+    background-image: url(images/bg-image.jpg);
     background-repeat: no-repeat;
+    background-color: #573824;
 }
 
 #page {
@@ -13,4 +19,15 @@ body {
 }
 img {
     border-radius: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 140%;
+}
+h2 {
+    font-size: 24px;
+}
+h1, h2{
+    font-color: #291b1a
 }
