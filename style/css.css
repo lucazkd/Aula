@@ -2,13 +2,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url(imagens/fundo.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
+  font-family: "Alice", serif;
 }
 .container {
   display: flex;
@@ -19,12 +18,16 @@ body {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.9); 
+  background-image: url('../imagens/card.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 40px;
   border-radius: 15px;
   max-width: 500px;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  color: rgb(255, 255, 255);
 }
 
 .card h1 {
@@ -36,8 +39,8 @@ body {
 }
 
 .card button {
-  background: #007BFF;
-  color: white;
+  background: #a10101;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
@@ -45,6 +48,13 @@ body {
   font-size: 16px;
 }
 
-.card button:hover {
-  background: #0056b3;
+
+.fundo {
+    
+  position: fixed;     
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;   
+  z-index: -1; 
 }
