@@ -27,8 +27,7 @@ body{
   font: var(--text);
 }
 
-a
-{
+a{
   text-decoration: none;
   color: inherit;
 }
@@ -41,19 +40,28 @@ h1, h2, h3
 {
   font: inherit;
 }
+img {
+  max-width: 100%;
+}
 
 .container {
   max-width: 1200px;
   padding-inline: 32px;
   margin-inline: auto;
+}
+
+.content-tag{
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  font: 500 10px/1.2 var(--font-famyli);
+  
   
 }
 
-/* utility-first*/
-.grid {
-  display: flex;
-}
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
+
